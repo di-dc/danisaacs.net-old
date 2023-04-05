@@ -15,15 +15,15 @@ export async function getStaticPaths({ paginate }) {
 // All paginated data is passed on the "page" prop
 const { page } = Astro.props
 
-const title = 'Tiny Blog Example'
-const description = 'A SAMPLE BLOG'
+const title = 'danisaacs.net'
+const description = 'Things I want to remember'
 
 // <aside data-pagefind-ignore> is a toggle for pagefind.app to exclude the
 // portion from search result, i.e. in this case to exclude the TOC from being
 // shown again in the result.
 ---
 
-<Page {title} {description}>
+<Page title={title} description={description}>
 
     <BlogHeader title={title} />
 
