@@ -6,7 +6,7 @@ import PaginationNavigation from '../../components/PaginationNavigation.astro'
 
 export async function getStaticPaths({ paginate }) {
 
-    let allPosts = await Astro.glob('../blog/*.mdx')
+    let allPosts = await Astro.glob('../blog/*.md*')
     allPosts = allPosts.sort(
         (a, b) => new Date(b.frontmatter.pubDate).valueOf() - new Date(a.frontmatter.pubDate).valueOf())
 
