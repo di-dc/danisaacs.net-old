@@ -2,11 +2,11 @@
 import Page from "../components/Page.astro";
 import SiteHeader from "../components/SiteHeader.astro";
 
-const title = "Tiny Rocket";
-const description = "A tiny Astro starter";
+const title = "danisaacs.net";
+const description = "DI.NET 2.0";
 ---
 
-<Page {title} {description}>
+<Page title={title} description={description}>
     <SiteHeader />
 
     <div class="flex justify-center">
@@ -15,18 +15,15 @@ const description = "A tiny Astro starter";
                 {description}
             </h1>
             <p class="my-6">
-                Tiny Rocket is an Astro theme / template. It is intended to be a
-                starter, so it is minimally styled. You can push the design as
-                far out as possible with <a
-                    href="https://tailwindcss.com/"
-                    class="underline underline-offset-2">Tailwind CSS</a
-                >.
+                The new danisaacs.net is based on the 
+                <a href="https://astro.build/themes/details/tiny-rocket/" class="underline underline-offset-2">Tiny Rocket</a>
+                theme/template for <a href="https://astro.build/" class="underline underline-offset-2">Astro</a>. 
+                It uses <a href="https://tailwindcss.com/" class="underline underline-offset-2">Tailwind CSS</a>.
             </p>
             <p class="my-6">
                 Out of the box, Tiny Rocket includes site search, RSS feed, and
                 web map. See <a href="/doc" class="underline underline-offset-2"
-                    >documentation</a
-                >.
+                    >documentation</a>.
             </p>
             <p class="my-6">
                 Source is at <a
