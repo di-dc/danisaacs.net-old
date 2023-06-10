@@ -1,8 +1,9 @@
 ---
 layout: '../../layouts/BlogPost.astro'
 title: Guess Who's Back? Alloy's Back
-pubDate: 16 Feb 2022
+pubDate: 05 Mar 2022
 description: Try the standard Optimizely demo site today
+heroImage: /assets/blog/GuessWhosBack/alloy-cms-12.png
 ---
 
 Alloy! On CMS 12!

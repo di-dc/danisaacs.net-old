@@ -3,17 +3,30 @@ import Page from "../components/Page.astro";
 import SiteHeader from "../components/SiteHeader.astro";
 
 const title = "danisaacs.net";
-const description = "DI.NET 2.0";
+const description = "di.net 2.0";
 ---
 
 <Page title={title} description={description}>
     <SiteHeader />
 
-    <div class="flex justify-center">
-        <div class="text-lg w-5/6 lg:w-3/4">
-            <h1 class="my-6 font-semibold">
-                {description}
+    <div class="flex">
+    <!-- <div class="flex justify-center"> -->
+        <div class="text-lg p-6 md:w-1/2 lg:w-2/5 w-full mx-8 shadow-[0_0_40px_-20px_rgba(0,0,0,0.3)] 
+            bg-slate-300/70 home-content">
+        <!-- <div class="text-lg w-5/6 lg:w-3/4 home-content"> -->
+            <h1 class="my-6 font-semibold text-2xl">
+                Hello
             </h1>
+            <div class="main">
+                <div class="top text-3xl">
+                    <p>My name is Dan Isaacs.</p>
+                    <p>Sometimes I do things on the computer.</p>
+                </div>
+                <div class="bottom text-1x1 pt-8">
+                    <p>If you want to reach me, you can <a href="mailto:dan@danisaacs.net" class="underline">email me</a>.</p>
+                </div>
+            </div>
+<!-- 
             <p class="my-6">
                 The new danisaacs.net is based on the 
                 <a href="https://astro.build/themes/details/tiny-rocket/" class="underline underline-offset-2">Tiny Rocket</a>
@@ -30,7 +43,7 @@ const description = "DI.NET 2.0";
                     href="https://github.com/slamethendry/tinyrocket"
                     class="underline underline-offset-2">GitHub</a
                 >. MIT License.
-            </p>
+            </p> -->
         </div>
     </div>
 </Page>

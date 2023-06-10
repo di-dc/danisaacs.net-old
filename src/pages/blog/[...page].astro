@@ -1,7 +1,7 @@
 ---
 import BlogHeader from '../../components/BlogHeader.astro'
 import BlogPostPreview from '../../components/BlogPostPreview.astro'
-import Page from '../../components/Page.astro'
+import BlogPage from '../../components/BlogPage.astro'
 import PaginationNavigation from '../../components/PaginationNavigation.astro'
 
 export async function getStaticPaths({ paginate }) {
@@ -10,7 +10,7 @@ export async function getStaticPaths({ paginate }) {
     allPosts = allPosts.sort(
         (a, b) => new Date(b.frontmatter.pubDate).valueOf() - new Date(a.frontmatter.pubDate).valueOf())
 
-    return paginate(allPosts, { pageSize: 3 });
+    return paginate(allPosts, { pageSize: 5 });
 }
 // All paginated data is passed on the "page" prop
 const { page } = Astro.props
@@ -23,7 +23,7 @@ const description = 'Things I want to remember'
 // shown again in the result.
 ---
 
-<Page title={title} description={description}>
+<BlogPage title={title} description={description}>
 
     <BlogHeader title={title} />
 
@@ -36,7 +36,7 @@ const description = 'Things I want to remember'
                     </p>
                 </div>
 
-                {page.data.map((p) =>
+                {page.data.map((p: any) =>
                 <BlogPostPreview post={p} />
                 )}
             </aside>
@@ -44,4 +44,4 @@ const description = 'Things I want to remember'
     </div>
 
     <PaginationNavigation {page} />
-</Page>
+</BlogPage>

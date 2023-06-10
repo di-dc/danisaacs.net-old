@@ -3,6 +3,7 @@ layout: '../../layouts/BlogPost.astro'
 title: Optimizely Data Platform (ODP) - Tracking and Usage Examples
 pubDate: 14 Jan 2022
 description: Get started with ODP
+heroImage: /assets/blog/ODP-TrackingAndUsage/odp.png
 ---
 
 The goal of this post is to provide some examples of working with [Optimizely Data Platform (ODP)](https://www.optimizely.com/products/intelligence/data-platform/) with [Optimizely Content Cloud](https://www.optimizely.com/products/content/) and [Commerce Cloud](https://www.optimizely.com/products/commerce/b2c/). Note that, while focused on those platforms using our [Foundation reference implementation](https://github.com/episerver/Foundation), the overall strategies can be used for tracking on any solution.

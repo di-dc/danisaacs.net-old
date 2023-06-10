@@ -1,18 +1,19 @@
 ---
 import BlogHeader from "../components/BlogHeader.astro";
-import Page from "../components/Page.astro";
+import BlogPage from "../components/BlogPage.astro";
 
 const { content } = Astro.props;
 const { title, description, pubDate, heroImage, alt } = content;
 ---
 
-<Page {title} {description}>
+<BlogPage {title} {description}>
     <BlogHeader title="danisaacs.net" />
 
     {
         heroImage && (
-            <div>
-                <img class="w-full" loading="eager" src={heroImage} alt={alt} />
+            <div class=" h-auto z-10">
+                <img class="h-full w-full " loading="eager" src={heroImage} alt={alt} />
+                
             </div>
         )
     }
@@ -32,4 +33,4 @@ const { title, description, pubDate, heroImage, alt } = content;
             </div>
         </div>
     </div>
-</Page>
+</BlogPage>

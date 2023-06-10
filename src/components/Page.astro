@@ -14,9 +14,11 @@ const language = "en-gb";
 <html lang={language}>
     <head>
         <BaseHead title={title} description={description} />
+        <script src="../scripts/randombg.js"></script>
     </head>
 
-    <body class="font-junction">
+    <body id="wallpaper" class="font-junction bg-fixed bg-no-repeat bg-cover bg-center bg-fixed wallpaper"
+        style="background-image: url('/assets/img/bg/europe-05.jpg');">
         <slot />
         <Footer />
     </body>

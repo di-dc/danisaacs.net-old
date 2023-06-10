@@ -3,6 +3,7 @@ layout: '../../layouts/BlogPost.astro'
 title: Running with Foundation
 pubDate: 16 Feb 2022
 description: Get started with the Foundation reference architecture
+heroImage: /assets/blog/RunningWithFoundation/foundation.png
 ---
 
 If you're reading this, you've probably already heard of Foundation, our [Optimizely](https://www.optimizely.com/)  (formerly Episerver) Content Cloud + B2C Commerce Cloud reference site. Want to run a local instance for testing or evaluation purposes? Want to use it as a starter site for a build? No problem – it's freely available up in GitHub: [https://github.com/episerver/Foundation](https://github.com/episerver/Foundation). Below I'm going to walk through a few tips + tricks on getting it running, but first two important callouts:
