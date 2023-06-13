@@ -14,9 +14,9 @@ If you've worked with Optimizely Content Cloud for awhile, two things are probab
 1.  You still sometimes call it Episerver CMS (and if it's been a longer while, you write it as EPiServer CMS)
 2.  You've seen the Alloy demo site
 
-Until recently with CMS 12, starting a new site meant either an empty site, or a [Foundation site](https://blog.danisaacs.net/running-with-foundation/). However, last Friday, Optimizely quietly released a CMS12 version of the Alloy sample site.
+Until recently with CMS 12, starting a new site meant either an empty site, or a [Foundation site](/blog/RunningWithFoundation/). However, last Friday, Optimizely quietly released a CMS12 version of the Alloy sample site.
 
-![](https://blog.danisaacs.net/content/images/2022/03/alloy-cms-12.png)
+![Alloy CMS 12](/assets/blog/GuessWhosBack/alloy-cms-12.png)
 
 Want to get your own CMS12 Alloy site running locally? Follow the steps below!
 
@@ -75,11 +75,11 @@ Note: want to change the port, or run on http instead of https? Before running t
   
 The first time you access the site, it should prompt you to create an admin user.
 
-![](https://blog.danisaacs.net/content/images/2022/03/create-admin-account.png)
+![Create admin user](/assets/blog/GuessWhosBack/create-admin-account.png)
 
 Once the site loads, there's a login link in the bottom-right of the footer -- or just append the path "/episerver/cms" to the URL to get to the login page. That will bring you to the CMS. First time in CMS 12? You'll find it largely looks the same, but everything is quite a bit snappier. You'll love it.
 
-![](https://blog.danisaacs.net/content/images/2022/03/alloy-cms-12-backend.png)
+![CMS backend](/assets/blog/GuessWhosBack/alloy-cms-12-backend.png)
 
 Troubleshooting
 ---------------
@@ -115,5 +115,3 @@ Resources
 
 *   The templates can be found here: [https://github.com/episerver/content-templates](https://github.com/episerver/content-templates)
 *   The template (nuget) package can be found here: [https://www.nuget.org/packages/EPiServer.Templates/](https://www.nuget.org/packages/EPiServer.Templates/)
-
-Share[](https://twitter.com/share?text=Guess who's back? Alloy's back!&url=https://blog.danisaacs.net/guess-whos-back-alloys-back/ "Twitter")[](https://www.facebook.com/sharer/sharer.php?u=https://blog.danisaacs.net/guess-whos-back-alloys-back/ "Facebook")[](https://www.linkedin.com/shareArticle?mini=true&url=https://blog.danisaacs.net/guess-whos-back-alloys-back//&title=Guess who's back? Alloy's back! "LinkedIn")[](mailto:?subject=Guess who's back? Alloy's back!&body=https://blog.danisaacs.net/guess-whos-back-alloys-back/ "Email")

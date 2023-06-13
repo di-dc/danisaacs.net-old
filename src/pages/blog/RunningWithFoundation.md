@@ -15,7 +15,7 @@ If you're reading this, you've probably already heard of Foundation, our [Optimi
 
 As noted above, the repository is at: [https://github.com/episerver/Foundation](https://github.com/episerver/Foundation) – for .NET5 (at least at the moment) you'll want to be working with the [_main_ branch](https://github.com/episerver/Foundation/tree/main).
 
-![](https://blog.danisaacs.net/content/images/2022/02/foundation-select-main-branch-e.png)
+![Use the main branch](/assets/blog/RunningWithFoundation/foundation-select-main-branch-e.png)
 
 Take a look at the readme to see the system requirements. On Windows, make you'll want SQL Server, Node.JS, and .NET5 runtime. (And some other stuff for running under IIS, but I'll cover that below.) For Mac/Linux (we can run on Mac and Linux now! Exciting!), the setup requires Docker (for SQL Server). You could approach that in other ways, but it's not built in to the setup script.
 
@@ -25,7 +25,7 @@ If you just want to run things locally (for example, for dev or for evaluation p
 
 The only pro-tip I'd throw in here is to update your _appsettings.json_ file with a valid Optimizely Search & Navigation (AKA Optimizely Find (AKA Episerver Find)) index before running the solution. Don't have an index? Sign up at [https://find.episerver.com](https://find.episerver.com) and generate a free dev index, and then add the index and service URL details:
 
-![](https://blog.danisaacs.net/content/images/2022/02/find.png)
+![Set up Find](/assets/blog/RunningWithFoundation/find.png)
 
 changeme!
 
@@ -43,7 +43,7 @@ Note: this is not intended to be an in-depth tutorial on all details of IIS setu
 
 That said: if this is your first time setting up a .NET 5 site in IIS, you must install the .NET 5 IIS module. Download and install the “Hosting Bundle” from: [https://dotnet.microsoft.com/download/dotnet/5.0](https://dotnet.microsoft.com/download/dotnet/5.0)
 
-![](https://blog.danisaacs.net/content/images/2022/02/iis-hosting-bundle-2.png)
+![Install Hosting Bundle](/assets/blog/RunningWithFoundation/iis-hosting-bundle-2.png)
 
 #### Get the code
 
@@ -87,7 +87,7 @@ Note: a license file isn’t needed for running under localhost. You might be ab
 
 Return to the root folder and run the _setup.cmd_ script as an administrator – this will create and configure the database, and some other initial setup. (Note, the “app name” property will just be used in the database names – it will not create an IIS site during this process.)
 
-![](https://blog.danisaacs.net/content/images/2022/02/code-setup.jpg)
+![Code code code matrix](/assets/blog/RunningWithFoundation/code-setup.jpg)
 
 #### Publish the site
 
@@ -123,15 +123,15 @@ When you created the site, it will have automatically created an app pool. You'r
 
 Right click the Application Pool created when you created the site in the previous step (by default, it should have the same name as the site), and select “Advanced Settings”
 
-![](https://blog.danisaacs.net/content/images/2022/02/app-pool-setup-01-e.png)
+![App pool setup 1](/assets/blog/RunningWithFoundation/app-pool-setup-01-e.png)
 
 Find the “Identity” setting, and click the dots to open the menu to change the setting
 
-![](https://blog.danisaacs.net/content/images/2022/02/app-pool-setup-02-e.png)
+![App pool setup 2](/assets/blog/RunningWithFoundation/app-pool-setup-02-e.png)
 
 Change the setting to “LocalSystem”, and click OK
 
-![](https://blog.danisaacs.net/content/images/2022/02/app-pool-setup-03-e.png)
+![App pool setup 3](/assets/blog/RunningWithFoundation/app-pool-setup-03-e.png)
 
 #### That's it!
 
@@ -145,7 +145,7 @@ Get a “WindowsCryptographicException” when you try to load the site? Double 
 
 ##### Get a syntax error while assets are built?
 
-\[webpack-cli\] SyntaxError: Invalid regular expression: /(\\p{Uppercase\_Letter}+|\\p{Lowercase\_Letter}|\\d)(\\p{Uppercase\_Letter}+)/: Invalid escape
+    \[webpack-cli\] SyntaxError: Invalid regular expression: /(\\p{Uppercase\_Letter}+|\\p{Lowercase\_Letter}|\\d)(\\p{Uppercase\_Letter}+)/: Invalid escape
 
   
 Make sure you're on a recent version of Node.
@@ -185,8 +185,4 @@ Conclusions
 
 Hopefully this (much longer than I meant to) post will help you get the .NET 5 version of Foundation up and running locally. Have any questions? Feel free to reach out. Find an issue? Create an issue in the GitHub repo. Wish this article had more fun images? Me too friend, me too.
 
-![](https://blog.danisaacs.net/content/images/2022/02/foundation-on-linux.png)
-
-Share[](https://twitter.com/share?text=Running with Foundation&url=https://blog.danisaacs.net/running-with-foundation/ "Twitter")[](https://www.facebook.com/sharer/sharer.php?u=https://blog.danisaacs.net/running-with-foundation/ "Facebook")[](https://www.linkedin.com/shareArticle?mini=true&url=https://blog.danisaacs.net/running-with-foundation//&title=Running with Foundation "LinkedIn")[](mailto:?subject=Running with Foundation&body=https://blog.danisaacs.net/running-with-foundation/ "Email")
-
-Topic [optimizely](/tag/optimizely/) [foundation](/tag/foundation/)
+![Foundation! On Linux!](/assets/blog/RunningWithFoundation/foundation-on-linux.png)

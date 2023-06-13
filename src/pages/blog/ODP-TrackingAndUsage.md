@@ -18,11 +18,11 @@ Now, let's get into some custom event tracking.
 
 First you'll need to create a new field in ODP. Log in to ODP, then go to account settings by clicking the gear icon in the top-right of the page.
 
-![](https://blog.danisaacs.net/content/images/2022/01/adding_field-01.png)
+![Adding a field](/assets/blog/ODP-TrackingAndUsage/adding_field-01.png)
 
 Then select "Create New Field" to create the new property -- I used the following values (the "field name" will be used in the tracking section below):
 
-![](https://blog.danisaacs.net/content/images/2022/01/adding_field-02.png)
+![Adding a field 2](/assets/blog/ODP-TrackingAndUsage/adding_field-02.png)
 
 ### Tracking
 
@@ -58,7 +58,7 @@ The example tracking below for Optimizely Forms leverages the available
 
 Once that script is included on your site, then viewing a page with an Optimizely Form will trigger a "Web Form: Impression" event, and submitting a form will trigger a "Web Form: Submission" event:
 
-![](https://blog.danisaacs.net/content/images/2022/01/form-events-impression-and-submission-v2.png)
+![Form events](/assets/blog/ODP-TrackingAndUsage/form-events-impression-and-submission-v2.png)
 
 ### Usage in ODP
 
@@ -70,29 +70,29 @@ Once you're tracking those form events, you can start to put them to work for yo
 
 Let's walk through the steps for the first example -- a report to track form conversion rates:
 
-![](https://blog.danisaacs.net/content/images/2022/01/forms-report-conversion-rate-by-form.png)
+![Form report](/assets/blog/ODP-TrackingAndUsage/forms-report-conversion-rate-by-form.png)
 
 1.  First, create a filter -- Event Type = "web\_form" and Form Name is not empty
 
-![](https://blog.danisaacs.net/content/images/2022/01/form-events-filter.png)
+![Form events filter](/assets/blog/ODP-TrackingAndUsage/form-events-filter.png)
 
 2\. Create a new report. Apply your new filter by clicking "All Traffic" in the top-left, and selecting your filter. Click the checkbox to apply:
 
-![](https://blog.danisaacs.net/content/images/2022/01/form-events-apply-filter.png)
+![Form events apply filter](/assets/blog/ODP-TrackingAndUsage/form-events-apply-filter.png)
 
 3\. Add columns to your report -- in this example, I added the field "Form Name", and then the following rocket columns to get the count of impressions, submissions and the calculated conversion rate:
 
-![](https://blog.danisaacs.net/content/images/2022/01/forms-report-conversion-rate-by-form-rocket-columns.png)
+![Forms report - rocket columns](/assets/blog/ODP-TrackingAndUsage/forms-report-conversion-rate-by-form-rocket-columns.png)
 
 Bonus: want to track an individual form, and see its success rate across different pages? Follow the steps above, and then:
 
 1.  Use the "Simple Filter" option to specify the form by name (don't forget to click "Apply" after adding the simple filter!)
 
-![](https://blog.danisaacs.net/content/images/2022/01/forms-report-conversion-rate-by-form-quick-filter.png)
+![Forms report conversion rate by form](/assets/blog/ODP-TrackingAndUsage/forms-report-conversion-rate-by-form-quick-filter.png)
 
 2\. Add the Page to the report columns.
 
-![](https://blog.danisaacs.net/content/images/2022/01/forms-report-conversion-rate-by-page.png)
+![Forms report conversion rate by page](/assets/blog/ODP-TrackingAndUsage/forms-report-conversion-rate-by-page.png)
 
 ## Search Events
 
@@ -370,7 +370,7 @@ Use the tracked events to identify which videos are getting watched (and watched
 
 Here's a sample report, as a starting point:
 
-![](https://blog.danisaacs.net/content/images/2022/01/video-events-report.png)
+![Video events report](/assets/blog/ODP-TrackingAndUsage/video-events-report.png)
 
 Conclusions
 -----------
