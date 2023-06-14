@@ -7,14 +7,14 @@ export interface Props {
     description: string;
 }
 const { title, description } = Astro.props;
+const language = "en-US";
 
-const language = "en-gb";
+{/* const isSearch = Astro.url.pathname == "/search" ? true : false; */}
 ---
-
 <html lang={language}>
     <head>
         <BaseHead title={title} description={description} />
-        <script src="../scripts/randombg.js"></script>
+        {/* {!isSearch && <script src="../scripts/randombg.js"></script>} */}
     </head>
 
     <body id="wallpaper" class="font-junction bg-fixed bg-no-repeat bg-cover bg-center bg-fixed wallpaper"
